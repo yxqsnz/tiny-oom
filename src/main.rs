@@ -26,7 +26,7 @@ fn main() -> Result<()> {
         .init();
     log::debug!("sysrq trigger file: {SYSRQ_TRIGGER_FILE}");
     log::debug!("psi memory file: {PSI_MEMORY_FILE}");
-	log::info!("tiny-oom started!");
+    log::info!("tiny-oom started!");
     loop {
         let psi_reader = BufReader::new(File::open(PSI_MEMORY_FILE)?);
         let avg10 = psi_reader
