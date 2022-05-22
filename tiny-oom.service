@@ -1,0 +1,11 @@
+[Unit]
+Description=Tiny oom
+ConditionPathExists=/proc/pressure
+After=sysinit.target
+
+[Service]
+ExecStart=/usr/bin/tiny-oom
+Restart=on-failure
+
+[Install]
+WantedBy=basic.target

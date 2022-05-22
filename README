@@ -1,0 +1,10 @@
+* Tiny-oom
+> A Tiny OOM daemon written in rust. 
+> Based on: https://github.com/endlessm/eos-boot-helper/tree/master/psi-monitor
+* Installation
+ * Requirements
+   - Rust
+ * Installation on Systemd
+   run `./install.sh`
+ * In others init systems
+   You need to create the service manually
