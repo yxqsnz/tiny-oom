@@ -11,7 +11,7 @@ const SYSRQ_TRIGGER_FILE: &str = "/proc/sysrq-trigger";
 const PSI_MEMORY_FILE: &str = "/proc/pressure/memory";
 const CHECK_INTERVAL: Duration = Duration::from_secs(1);
 const RECOVERY_INTERVAL: Duration = Duration::from_secs(10);
-const MEM_THRESHOLD: f32 = 13.0;
+const MEM_THRESHOLD: f32 = 15.0;
 fn get_avg10_from_string(s: String) -> Option<f32> {
     s.split_ascii_whitespace()
         .skip(1)
